@@ -3,7 +3,13 @@ use blockchain::*;
 
 
 
+
 fn main() {
-    let blockchain = Blockchain::init();
-    println!("{:?}",blockchain)
+    let mut blockchain = Blockchain::init();
+    
+    blockchain.add();
+    blockchain.add();
+    blockchain.add();
+    
+    println!("{:#?}",blockchain);
 }
